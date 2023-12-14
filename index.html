@@ -2,37 +2,42 @@
 <html lang="en" class="font-sans">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/b5ee7916b8.js"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Roboto+Condensed:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/b5ee7916b8.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Zoom Redesign</title>
   </head>
   <body>
-    <div class="flex flex-col m-auto container">
+    <div class="flex flex-col justify-center items-center px-5">
       <header
-        class="flex justify-between items-center h-24 border-solid border-slate-200 border-b-[1px] gap-14"
+        class="flex justify-around items-center h-24 border-b-[1px] border-slate-200 gap-12 w-full"
       >
-        <nav>
+        <div class="max-w-[100px]">
+          <a href="https://zoom.us/sv" aria-label="Zoom Home Page">
+            <img
+              src="https://st2.zoom.us/static/6.3.17532/image/new/topNav/Zoom_logo.svg"
+              alt="Zoom Home Page Start"
+            />
+          </a>
+        </div>
+
+        <nav class="hidden lg:flex">
           <ul
-            class="hidden md:flex items-center gap-14 lg:text-xl md:text-md font-normal text-slate-500"
+            class="flex items-center gap-12 lg:text-lg md:text-md font-normal text-slate-500"
           >
-            <li>
-              <a href="https://zoom.us/sv" aria-label="Zoom Home Page">
-                <img
-                  src="https://st2.zoom.us/static/6.3.17532/image/new/topNav/Zoom_logo.svg"
-                  alt="Zoom Home Page Start"
-                />
-              </a>
-            </li>
             <li>
               <a
                 href=""
@@ -64,31 +69,31 @@
           </ul>
         </nav>
 
-        <div class="flex gap-14 justify-center items-center">
+        <div class="flex gap-12 justify-center items-center">
           <a
-            class="font-bold hover:bg-blue-600 hover:text-slate-100 bg-transparent border-blue-600 border-solid border-[1px] px-7 py-2 rounded-full text-slate-800 items-center drop-shadow-lg text-center lg:text-lg md:text-md"
+            class="font-bold hover:bg-blue-600 hover:text-slate-100 bg-transparent border-blue-600 border-solid border-[1px] px-3 py-2 rounded-full text-slate-800 items-center hidden md:block lg:text-lg md:text-md drop-shadow-lg text-center"
           >
             Kontakta säljavdelningen
           </a>
 
           <a
-            class="font-bold bg-blue-600 hover:bg-transparent hover:border-blue-600 hover:border-solid border-[1px] hover:text-slate-800 px-7 py-2 rounded-full text-slate-100 items-center hidden md:block lg:text-lg md:text-md drop-shadow-lg text-center"
+            class="font-bold bg-blue-600 hover:bg-transparent hover:border-blue-600 hover:border-solid border-[1px] hover:text-slate-800 px-3 py-2 rounded-full text-slate-100 items-center lg:text-lg md:text-md drop-shadow-lg text-center"
             src=""
           >
             Registrera dig Gratis
           </a>
         </div>
 
-        <button class="md:hidden text-blue-600 text-lg">
+        <button class="lg:hidden text-slate-800 text-lg">
           <i class="fa-solid fa-bars"></i>
         </button>
       </header>
 
       <section
         id="hero"
-        class="flex lg:flex-row flex-col items-center justify-between py-24"
+        class="flex lg:flex-row flex-col items-center justify-between lg:py-24 py-14 gap-12 container"
       >
-        <div class="flex flex-col max-w-2xl gap-20">
+        <div class="flex flex-col max-w-2xl lg:gap-20 gap-8">
           <h1
             class="lg:text-7xl text-5xl font-bold text-left text-slate-800 drop-shadow-lg"
           >
@@ -111,23 +116,23 @@
             älskar.
           </p>
 
-          <div class="flex gap-20">
+          <div class="flex lg:gap-20 gap-8">
             <a
-              class="font-bold hover:bg-blue-600 hover:text-slate-100 bg-transparent border-blue-600 border-solid border-[1px] px-7 py-2 rounded-full text-slate-800 drop-shadow-lg text-center w-60"
+              class="font-bold hover:bg-blue-600 hover:text-slate-100 bg-transparent border-blue-600 border-solid border-[1px] px-3 py-2 rounded-full text-slate-800 drop-shadow-lg text-center"
             >
               Kontakta säljavdelningen
             </a>
             <a
-              class="font-bold bg-blue-600 hover:bg-transparent hover:border-blue-600 hover:border-solid border-[1px] hover:text-slate-800 px-7 py-2 rounded-full text-slate-100 drop-shadow-lg text-center w-60"
+              class="font-bold bg-blue-600 hover:bg-transparent hover:border-blue-600 hover:border-solid border-[1px] hover:text-slate-800 px-3 py-2 rounded-full text-slate-100 drop-shadow-lg text-center"
             >
               Registrera dig Gratis
             </a>
           </div>
         </div>
 
-        <figure class="max-w-2xl">
+        <figure class="lg:max-w-xl">
           <img
-            class="rounded-bl-full shadow-lg"
+            class="lg:rounded-bl-full shadow-lg rounded-full"
             src="images/slide2-4.jpg"
             alt="Picture showing a woman working with an Ipad"
           />
@@ -135,17 +140,19 @@
       </section>
 
       <section
-        class="flex lg:flex-row flex-col items-center justify-between py-24"
+        class="flex lg:flex-row flex-col-reverse items-center justify-between lg:py-24 py-14 gap-12 container"
       >
-        <figure class="max-w-2xl">
+        <figure class="lg:max-w-xl">
           <img
+          class="lg:rounded-r-full shadow-lg rounded-full"
             src="./images/img1.jpg"
             alt="This is not a helpful alt text"
-            class="rounded-r-full shadow-lg"
           />
         </figure>
 
-        <div class="flex flex-col max-w-2xl gap-20">
+        <div class="flex flex-col justify-center items-start max-w-2xl lg:gap-20 gap-8">
+          
+          <div class="flex flex-col justify-center items-center lg:gap-20 gap-8 max-w-2xl">
           <h2
             class="lg:text-5xl text-4xl font-bold text-slate-800 drop-shadow-lg"
           >
@@ -162,9 +169,10 @@
               >Upptäck Zoom One</a
             >
           </p>
+        </div>
 
-          <ul class="flex items-center flex-wrap gap-20 max-w-2xl">
-            <li class="w-3/12 flex items-start gap-3">
+          <ul class="grid grid-cols-2 justify-items-start xl:gap-8 gap-4 max-w-2xl">
+            <li class=" flex justify-center items-center gap-4">
               <svg
                 width="34"
                 height="34"
@@ -227,7 +235,7 @@
                 >Virtuella möten</a
               >
             </li>
-            <li class="w-3/12 flex items-start gap-3">
+            <li class=" flex justify-center items-center gap-4">
               <svg
                 width="34"
                 height="34"
@@ -290,7 +298,7 @@
                 >Teamchatt</a
               >
             </li>
-            <li class="w-3/12 flex items-start gap-3">
+            <li class=" flex justify-center items-center gap-4">
               <svg
                 width="34"
                 height="34"
@@ -353,7 +361,7 @@
                 >VoIP-telefonsystem</a
               >
             </li>
-            <li class="w-3/12 flex items-start gap-3">
+            <li class=" flex justify-center items-center gap-4">
               <svg
                 width="34"
                 height="34"
@@ -416,7 +424,7 @@
                 >Whiteboard online</a
               >
             </li>
-            <li class="w-3/12 flex items-start gap-3">
+            <li class=" flex justify-center items-center gap-4">
               <svg
                 width="34"
                 height="34"
@@ -479,7 +487,7 @@
                 >Samtalsintelligens</a
               >
             </li>
-            <li class="w-3/12 flex items-start gap-3">
+            <li class=" flex justify-center items-center gap-4">
               <svg
                 width="34"
                 height="34"
@@ -542,7 +550,7 @@
                 >E-post och kalender</a
               >
             </li>
-            <li class="w-3/12 flex items-start gap-3">
+            <li class=" flex justify-center items-center gap-4">
               <svg
                 width="34"
                 height="34"
@@ -611,98 +619,101 @@
 
       <section
         id="cred"
-        class="flex flex-col items-center gap-20 bg-amber-50 py-24 drop-shadow-xl rounded-b-full"
+        class="flex flex-col justify-center items-center lg:py-24 py-14 container"
       >
-        <div class="flex flex-col gap-20">
+      <div class="flex flex-col justify-center items-center drop-shadow-xl rounded-b-full bg-amber-50 bg-opacity-60 w-full lg:gap-20 gap-8 p-14">
+        <div class="flex flex-col justify-center items-center">
           <h2
-            class="lg:text-5xl text-4xl font-bold text-slate-800 drop-shadow-lg"
+            class="lg:text-5xl text-4xl font-bold text-slate-900 drop-shadow-2xl text-center"
           >
             Företag runt om i världen väljer Zoom
           </h2>
-         
         </div>
 
-        <div class="flex flex-col gap-20 flex-wrap justify-center items-center">
-          <div class="flex gap-20">
+        <div
+          class="flex lg:flex-col lg:gap-20 gap-8 justify-center items-center max-w-4xl container"
+        >
+          <div class="flex justify-center items-center lg:gap-20 gap-8 flex-wrap container max-w-3xl">
             <img
               src="https://st1.zoom.us/static/6.3.17679/image/home2/logo3-1.png"
               alt="Formula 1 Logo"
-              class=""
+              class="w-24"
             />
             <img
               src="https://st2.zoom.us/static/6.3.17679/image/home2/logo1-1.png"
               alt="ServiceNow Logo"
-              class=""
+              class="w-24"
             />
             <img
               src="https://st3.zoom.us/static/6.3.17679/image/home2/logo1-2.png"
               alt="Rakuten Logo"
-              class=""
+              class="w-24"
             />
             <img
               src="https://st1.zoom.us/static/6.3.17679/image/home2/logo1-3.png"
               alt="The New York Times Logo"
-              class=""
+              class="w-24"
             />
             <img
               src="https://st1.zoom.us/static/6.3.17679/image/home2/logo4-3.png"
               alt="FedEx Logo"
-              class=""
+              class="w-24"
             />
-          </div>
-          <div class="flex gap-20">
             <img
               src="https://st3.zoom.us/static/6.3.17679/image/home2/logo2-1.png"
               alt="California State Parks Logo"
-              class=""
+              class="w-24"
             />
             <img
               src="https://st1.zoom.us/static/6.3.17679/image/home2/logo2-2.png"
               alt="Atlassian Logo"
-              class=""
+              class="w-24"
             />
             <img
               src="https://st2.zoom.us/static/6.3.17679/image/home2/logo2-3.png"
               alt="Nasdaq Logo"
-              class=""
+              class="w-24"
             />
             <img
-            src="https://st3.zoom.us/static/6.3.17679/image/home2/logo4-2.png"
-            alt="Capital One Logo"
-            class=""
-          />
-          </div>
-          <div class="flex gap-20">
-            
+              src="https://st3.zoom.us/static/6.3.17679/image/home2/logo4-2.png"
+              alt="Capital One Logo"
+              class="w-24"
+            />
+
             <img
               src="https://st2.zoom.us/static/6.3.17679/image/home2/logo3-2.png"
               alt="Moffitt Cancer Center Logo"
-              class=""
+              class="w-24"
             />
             <img
               src="https://st3.zoom.us/static/6.3.17679/image/home2/logo3-3.png"
               alt="Walmart Logo"
-              class=""
+              class="w-24"
             />
             <img
-            src="https://st2.zoom.us/static/6.3.17679/image/home2/logo4-1.png"
-            alt="World Wildife Fund Logo"
-            class=""
-          />
+              src="https://st2.zoom.us/static/6.3.17679/image/home2/logo4-1.png"
+              alt="World Wildife Fund Logo"
+              class="w-24"
+            />
           </div>
         </div>
+
         <a
         href="https://explore.zoom.us/sv/customer/all/"
         target="_blank"
-        class="lg:text-2xl text-lg text-blue-700 drop-shadow-lg max-w-lg underline"
+        class="lg:text-2xl text-lg text-blue-700 drop-shadow-lg underline"
         >Läs deras berättelser</a
       >
+
+      </div>
       </section>
 
       <section
-        class="flex lg:flex-row flex-col items-center justify-between py-24"
+        class="flex lg:flex-row flex-col items-center justify-between lg:py-24 py-14 gap-12 container"
       >
-        <div class="flex flex-col justify-center items-left gap-20 max-w-2xl">
+        <div
+          class="flex flex-col justify-center items-left lg:gap-20 gap-8 max-w-2xl"
+        >
           <h2
             class="lg:text-5xl text-4xl font-bold text-slate-800 drop-shadow-lg"
           >
@@ -717,7 +728,7 @@
 
           <div>
             <a
-              class="font-bold bg-blue-600 hover:bg-transparent hover:border-blue-600 hover:border-solid border-[1px] hover:text-slate-800 px-7 py-2 rounded-full text-slate-100 items-centerc text-center lg:text-lg md:text-md drop-shadow-lg"
+              class="font-bold bg-blue-600 hover:bg-transparent hover:border-blue-600 hover:border-solid border-[1px] hover:text-slate-800 px-3 py-2 rounded-full text-slate-100 items-centerc text-center lg:text-lg md:text-md drop-shadow-lg"
               href="https://explore.zoom.us/sv/collaboration-tools/"
               target="_blank"
               >Upptäck möjligheterna
