@@ -2,20 +2,13 @@
 
 I dagens uppgift ska ni designa om förstasidan på zoom.us för att göra den mer användarvänlig.
 
-### Sätt upp projektet
-
-1. Öppna en terminal och gå med `cd` där du vill skapa projektet.
-2. Skriv `npm create vite@latest zoom-redesign`
-3. Välj Vanilla js och sen Javascript i följande frågor.
-4. Gör resten enligt [förra workshopen](https://github.com/davidshore/chas_tailwind)
-
 ## Hur du klarar uppgiften
 
 Ni skapar en förenklad version av zooms hemsida så ni behöver inte ha med allt innehåll på sajten, men ta med minst 2 sektioner utöver navigation och hero-sektionen.
 
 #### Stil
 
-Välg elegant, lekfullt eller seriöst. Utgå från typsnitt och färger som passar er stil.
+Välj elegant, lekfullt eller seriöst. Utgå från typsnitt och färger som passar er stil.
 
 #### Hierarki
 
@@ -41,35 +34,3 @@ Om ni vill kan ni använda nya bilder eller illustrationer. T.ex. [business illu
 ### Responsiv
 
 Gör sajten responsiv så att den funkar både på mobil och desktop.
-
-## Hur du lämnar in
-
-1. Skapa ett repo på github.
-2. Ladd up dina filer till github:
-
-```
-git init
-git add .
-git commit -m "first commit"
-git branch -M main
-git remote add origin <Adressen till ditt repo>
-git push -u origin main
-```
-
-3. Klicka på uppgiften i canvas och ange länken till ditt repo.
-
----
-
-### :boom: Success!
-
-Efter denna uppgift ska ni kunna analysera en hemsida och komma med förslag på förbättringar.
-
----
-
-### :runner: Extrauppgifter
-
-Klar? Här är lite mer att göra:
-
-1. Lägg till "Ready to get started?"-sektionen
-1. Lägg till en footer med valfritt innehåll
-1. Skapa sidor till alla länkar med valfritt innehåll
